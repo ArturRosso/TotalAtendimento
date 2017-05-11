@@ -57,7 +57,6 @@ namespace TotalAtendimento
             {
                 return this.Items[this.Items.IndexOfKey(asIMEI)].SubItems[aiColuna].Text;
             }
-
         }
 
         public bool SetIMEI(string asIMEI)
