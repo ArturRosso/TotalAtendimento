@@ -45,8 +45,8 @@
             this.CustomButton.UseSelectable = true;
             this.CustomButton.Visible = false;
             this.Lines = new string[] {
-        ",00"};
-            this.Text = ",00";
+        "0,00"};
+            this.Text = "0,00";
             this.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.UseStyleColors = true;
             this.TextChanged += new System.EventHandler(this.DecTextBox_TextChanged);

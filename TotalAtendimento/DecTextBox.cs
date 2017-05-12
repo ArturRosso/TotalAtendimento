@@ -64,6 +64,7 @@ namespace TotalAtendimento
             if (lsNovoValor == "")
             {
                 this.Text = ",00";
+                this.SelectionStart = this.Text.Length;
                 return;
             }
 
@@ -75,10 +76,14 @@ namespace TotalAtendimento
             else
                 lsNovoValor += "00";
 
-            if (int.Parse(lsNovoValor) == 0)
+            if (int.TryParse(lsNovoValor, out int liValor))
             {
-                this.Text = ",00";
-                return;
+                if(liValor == 0)
+                {
+                    this.Text = ",00";
+                    this.SelectionStart = this.Text.Length;
+                    return;
+                }
             }
 
             if (lsNovoValor.Length > 9)

@@ -72,5 +72,24 @@ namespace TotalAtendimento
             lfIngredienteOpcional.MdiParent = this;
             lfIngredienteOpcional.Show();
         }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCollection lfcFormsAbertos = Application.OpenForms;
+
+            foreach (Form lf in lfcFormsAbertos)
+            {
+                if (lf.Name == "form_produtos")
+                {
+                    lf.BringToFront();
+                    return;
+                }
+            }
+
+            form_produtos lfIngredienteOpcional = new form_produtos();
+            lfIngredienteOpcional.Name = "form_produtos";
+            lfIngredienteOpcional.MdiParent = this;
+            lfIngredienteOpcional.Show();
+        }
     }
 }

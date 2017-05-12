@@ -30,9 +30,10 @@
         {
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mn_cadastro_ingrediente_opcional = new System.Windows.Forms.ToolStripMenuItem();
+            this.adicionaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.adicionaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mn_cadastro_ingrediente_opcional,
-            this.adicionaisToolStripMenuItem});
+            this.adicionaisToolStripMenuItem,
+            this.produtosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -52,6 +54,13 @@
             this.mn_cadastro_ingrediente_opcional.Size = new System.Drawing.Size(236, 26);
             this.mn_cadastro_ingrediente_opcional.Text = "Ingredientes Opcionais";
             this.mn_cadastro_ingrediente_opcional.Click += new System.EventHandler(this.mn_cadastro_ingrediente_opcional_Click);
+            // 
+            // adicionaisToolStripMenuItem
+            // 
+            this.adicionaisToolStripMenuItem.Name = "adicionaisToolStripMenuItem";
+            this.adicionaisToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.adicionaisToolStripMenuItem.Text = "Adicionais";
+            this.adicionaisToolStripMenuItem.Click += new System.EventHandler(this.adicionaisToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -73,12 +82,12 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // adicionaisToolStripMenuItem
+            // produtosToolStripMenuItem
             // 
-            this.adicionaisToolStripMenuItem.Name = "adicionaisToolStripMenuItem";
-            this.adicionaisToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
-            this.adicionaisToolStripMenuItem.Text = "Adicionais";
-            this.adicionaisToolStripMenuItem.Click += new System.EventHandler(this.adicionaisToolStripMenuItem_Click);
+            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // form_menu_principal
             // 
@@ -108,5 +117,6 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem adicionaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
     }
 }
